@@ -1,16 +1,81 @@
-# React + Vite
+## Weather App 🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Сайт погоды, который показывает актуальные данные о погоде в выбранном городе. Проект сделан с использованием React, Tailwind CSS и Ant Design.
 
-Currently, two official plugins are available:
+## 📌 Возможности
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Поиск города и отображение текущей погоды
 
-## React Compiler
+Показ температуры, влажности, состояния воздуха и других параметров
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Использование иконок для визуального отображения погоды
 
-## Expanding the ESLint configuration
+Адаптивный дизайн для мобильных и десктопных устройств
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Сохранение выбранного города в localStorage для удобства
+
+## 🛠 Технологии
+
+React – библиотека для построения интерфейсов
+
+Tailwind CSS – утилитарный CSS-фреймворк для стилизации
+
+Ant Design – готовые компоненты UI
+
+React Router – маршрутизация между страницами
+
+Fetch/Axios – для запросов к API погоды
+
+## ⚙ Установка и запуск
+
+Клонировать репозиторий:
+
+git clone https://github.com/temirlan-frontend/weather-app.git
+
+## Перейти в папку проекта:
+
+cd weather-app
+
+## Установить зависимости:
+
+npm install
+
+## Запустить проект:
+
+npm run dev
+
+Открыть в браузере http://localhost:5173
+
+## 🔗 API
+
+Проект использует бесплатное API для получения данных о погоде.
+(Укажи здесь, какой API ты использовал, например OpenWeatherMap или WeatherAPI.)
+
+## 📂 Структура проекта
+
+src/
+├── api/ # Запросы к API погоды
+│ └── weatherApi.js
+├── hooks/ # Кастомные хуки
+│ └── useWeatherByCity.js
+├── layout/ # Общие компоненты интерфейса
+│ ├── AppHeader.jsx
+│ ├── AppLayout.jsx
+│ ├── AppSider.jsx
+│ └── SiderItems.jsx
+├── pages/ # Страницы приложения
+│ ├── AirQuality.jsx
+│ ├── Allergy.jsx
+│ ├── Hourly.jsx
+│ ├── Radar.jsx
+│ ├── Today.jsx
+│ ├── TwoWeekForecast.jsx
+│ └── WeekLyForecast.jsx
+├── router/ # Маршруты приложения
+│ └── Router.jsx
+├── utils/ # Вспомогательные функции
+├── App.jsx # Главный компонент
+├── main.jsx # Точка входа
+└── global.css # Глобальные стили
+
+![today]({2843A32C-5EDD-48A8-A983-958DAEAD11C9}.png)
