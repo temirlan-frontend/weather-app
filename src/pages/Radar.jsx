@@ -45,13 +45,11 @@ const Radar = () => {
             scrollWheelZoom={true}
             style={{ height: '100%', width: '100%' }}
           >
-            {/* Базовая карта */}
             <TileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               attribution="&copy; OpenStreetMap"
             />
 
-            {/* Радар осадков */}
             <TileLayer
               url="https://tilecache.rainviewer.com/v2/radar/0/{z}/{x}/{y}/2/1_1.png"
               attribution="&copy; RainViewer"

@@ -27,7 +27,6 @@ const AirQuality = () => {
             </p>
           </div>
 
-          {/* PM2.5 */}
           <div className="bg-white/80 rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
             <h2 className="text-lg font-semibold text-gray-800 mb-2">PM2.5</h2>
             <p className="text-2xl font-bold text-gray-900">

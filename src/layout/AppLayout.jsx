@@ -24,8 +24,8 @@ const AppLayout = () => {
         <Layout.Content
           className="bg-white text-black"
           style={{
-            marginTop: 64, // высота Header
-            marginLeft: 270, // ширина Sider
+            marginTop: 64,
+            marginLeft: 270,
             height: 'calc(100vh - 64px)',
             overflow: 'auto',
           }}
