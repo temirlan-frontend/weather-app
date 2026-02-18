@@ -19,7 +19,6 @@ const AirQuality = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {/* PM10 */}
           <div className="bg-white/80 rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
             <h2 className="text-lg font-semibold text-gray-800 mb-2">PM10</h2>
             <p className="text-2xl font-bold text-gray-900">
