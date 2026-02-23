@@ -1,24 +1,7 @@
 import { useOutletContext } from 'react-router-dom'
 import { useWeatherByCity } from '../hooks/useWeatherByCity'
-
-const getWeatherIcon = (code) => {
-  if (code === 0) return '☀️'
-  if (code <= 2) return '🌤️'
-  if (code <= 3) return '☁️'
-  if (code >= 51 && code <= 67) return '🌧️'
-  if (code >= 71 && code <= 77) return '❄️'
-  if (code >= 95) return '⛈️'
-  return '🌥️'
-}
-
-const formatDay = (date, index) => {
-  if (index === 0) return 'Сегодня'
-  return new Date(date).toLocaleDateString('ru-RU', {
-    weekday: 'short',
-    day: 'numeric',
-    month: 'short',
-  })
-}
+import { weatherIcon } from '../utils/weatherIcon'
+import { formatDay } from '../utils/formatDay'
 
 const WeeklyForecast = () => {
   const { city } = useOutletContext()
@@ -65,9 +48,7 @@ const WeeklyForecast = () => {
                   {formatDay(day, index)}
                 </div>
 
-                <div className="text-4xl drop-shadow">
-                  {getWeatherIcon(code)}
-                </div>
+                <div className="text-4xl drop-shadow">{weatherIcon(code)}</div>
 
                 <div className="flex gap-6 text-lg">
                   <span className="text-red-500 font-bold">{max}°</span>

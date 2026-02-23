@@ -1,11 +1,6 @@
 import { useOutletContext } from 'react-router-dom'
 import { useWeatherByCity } from '../hooks/useWeatherByCity'
-
-const getIcon = (precipitation) => {
-  if (precipitation > 2) return '🌧️'
-  if (precipitation > 0) return '🌦️'
-  return '☀️'
-}
+import { getIcon } from '../utils/getIcon'
 
 const Hourly = () => {
   const { city } = useOutletContext()
