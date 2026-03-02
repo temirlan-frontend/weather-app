@@ -7,6 +7,7 @@ import Month from '../pages/TwoWeekForecast'
 import Radar from '../pages/Radar'
 import Today from '../pages/Today'
 import WeeklyForecast from '../pages/WeeklyForecast'
+import Error from '../pages/Error'
 
 const Router = () => {
   return (
@@ -20,6 +21,7 @@ const Router = () => {
           <Route path="radar" element={<Radar />} />
           <Route path="allergy" element={<Allergy />} />
           <Route path="airQuality" element={<AirQuality />} />
+          <Route path="*" element={<Error />} />
         </Route>
       </Routes>
     </>

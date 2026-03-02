@@ -28,9 +28,7 @@ const Today = () => {
             {daily.temperature_2m_min[0]}°
           </p>
         </div>
-        <div className="text-8xl animate-pulse">
-          {getWeatherIcon(current.weathercode)}
-        </div>
+        <div className="text-8xl">{getWeatherIcon(current.weathercode)}</div>
         <div className="absolute inset-0 opacity-20">
           <svg
             className="w-full h-full"
@@ -51,7 +49,7 @@ const Today = () => {
       <div className="bg-white border rounded-2xl p-4 shadow-sm">
         <h2 className="font-semibold mb-3 text-gray-700">Дождь сегодня</h2>
         <div className="relative flex items-end space-x-1 h-36 bg-gray-50 rounded-xl p-2">
-          {[...Array(5)].map((_, idx) => (
+          {[...Array(5)].map((idx) => (
             <div
               key={idx}
               className="absolute left-0 right-0 h-px bg-gray-200"

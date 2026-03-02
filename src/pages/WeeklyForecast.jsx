@@ -21,7 +21,7 @@ const WeeklyForecast = () => {
           <h1 className="text-4xl font-bold text-white drop-shadow">
             Прогноз на 7 дней
           </h1>
-          <p className="text-xl text-white/90 mt-2 tracking-widest">
+          <p className="text-xl text-blue-600 mt-2 tracking-widest">
             {city.toUpperCase()}
           </p>
         </div>
